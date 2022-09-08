@@ -1,0 +1,10 @@
+ *Variables: son datos que pueden tener cualquier valor que nosotros necesitemos asignarle.
+
+ *Strings: Son cadenas de texto que pueden ser desde una letra hasta una oración.
+
+ * Funciones (argumentos, `return`): los argumentos son variables que usara la funcion para hacer alguna cosa y return sirve para regresar 
+ los datos que se optienen al realizar una función.
+
+ * Declaraciones `if`: funciona para hacer algo "Si" se cumple una condición.
+
+ * Valores booleanos (`true`, `false`): son los similares a verdadero y falso.
