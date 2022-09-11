@@ -151,7 +151,7 @@ function operadoresLogicos(num1, num2, num3) {
   }else if((num1 > num2) && (num1 > num3)){
     return "Número 1 es mayor y positivo";
   }else if((num3 > num1) && (num3 > num2)){
-    return num3++;
+    return num3 + 1;
   }else{
     return false;
   }
@@ -163,11 +163,11 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if(((numero % numero === 0) && (numero % 1 === 0)) && ((numero !== 0) && (numero !== 1))){
-    return true;
-  }else{
-    return false;
-  }
+  if (numero === 0 || numero === 1 || numero === 4) return false;
+	for (let x = 2; x < numero / 2; x++) {
+		if (numero % x == 0) return false;
+	}
+	return true;
 }
 
 function esVerdadero(valor){
