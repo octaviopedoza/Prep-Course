@@ -190,13 +190,13 @@ function tablaDelSeis(){
     var cont = 6 * i;
     var arr2 = arr.push(cont);
   }
-  return arr2;
+  return arr;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(numero > 99){
+  if((numero > 99) && (numero <= 999)){
     return true;
   }else{
     return false;
@@ -207,12 +207,12 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var resultado = null;
+  var resultado = numero;
   var i = 0;
   do{
     i = i + 1;
-    resultado = numero + 5;
-  }while(i <= 8);
+    resultado = resultado + 5;
+  }while(i < 8);
   return resultado;
 }
 
