@@ -256,17 +256,21 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   var arr = [];
-  var suma = numero;
-  for(var i = 0; i <= 10; i++){
-    suma = (numero + 2);
-    arr.push(suma);
-    if(suma === i){
+  var suma = 0;
+  for(var i = 1; i <= 10; i++){
+    numero = numero + 2;
+    suma = i;
+    arr.push(numero);
+    if( numero === suma){
       break;
-      return "Se interrumpió la ejecución";
-    }
-      return arr;
     }
   }
+  if ( numero === suma){
+    return "Se interrumpió la ejecución";
+  } else {
+    return arr;
+  }
+}
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
